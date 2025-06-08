@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmación de asistencia</title>
+  <link rel="stylesheet" href="{% static 'invitacion/css/formulario.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <form class="formulario" method="POST" action="">
+    {% csrf_token %}
+    <h2>Invitación</h2>
+
+    <p class="mensaje">¡DESEOSOS DE COMPARTIR CONTIGO!<br>
+    Déjanos saber si puedes asistir.</p>
+
+    <p class="mensaje" id="mensaje-cupo">
+      <strong>Jhonatan Y Esposa</strong> tenemos <strong><span id="cupo">1</span> cupo(s)</strong> para que nos acompañen a vivir este momento tan especial
+    </p>
+
+    <label for="invitado_principal">Invitado principal:</label>
+    <input type="text" id="invitado_principal" name="invitado_principal" required>
+
+    <div id="invitados-extra" class="personas-invitadas"></div>
+
+    <label for="relacion">¿Cuál es tu relación con los novios?</label>
+    <select name="relacion" id="relacion" required>
+      <option value="">Seleccione una opción</option>
+      <option value="Familia del novio">Familia del novio</option>
+      <option value="Familia de la novia">Familia de la novia</option>
+      <option value="Amigo del novio">Amigo del novio</option>
+      <option value="Amigo de la novia">Amigo de la novia</option>
+    </select>
+
+    <div class="radio-group">
+      <label>¿Puedes asistir?</label>
+      <label><input type="radio" name="asistencia" value="Asistirá" required> Sí</label>
+      <label><input type="radio" name="asistencia" value="No asistirá" required> No</label>
+    </div>
+
+    <button type="submit" class="boton-enviar">Enviar</button>
+  </form>
+
+  <script>
+    function getParametroUrl(nombre) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(nombre);
+    }
+
+    const cantidad = parseInt(getParametroUrl("cantidad")) || 1;
+    document.getElementById("cupo").textContent = cantidad;
+
+    const container = document.getElementById("invitados-extra");
+    for (let i = 2; i <= cantidad; i++) {
+      const label = document.createElement("label");
+      label.textContent = `Invitado ${i}:`;
+      const input = document.createElement("input");
+      input.type = "text";
+      input.name = `invitado_${i}`;
+      container.appendChild(label);
+      container.appendChild(input);
+    }
+
+    // Campo oculto para enviar cantidad_cupos
+    const hidden = document.createElement("input");
+    hidden.type = "hidden";
+    hidden.name = "cantidad_cupos";
+    hidden.value = cantidad;
+    container.appendChild(hidden);
+  </script>
+
+</body>
+</html>

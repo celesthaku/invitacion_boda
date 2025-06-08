@@ -1,6 +1,6 @@
 /* === SECCIÓN 1: PORTADA === */
 #seccion1-portada {
-  background-image: url('../img/fondo_1_F2.jpg'); /* fotob_1.png   fondoa_1.png*/
+  background-image: url('../img/fondo_1_f3.jpg'); /* fotob_1.png   fondoa_1.png*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -9,8 +9,9 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   color: #000;
+  padding-top: 5vh;
 }
 
 /* TITULOS PRINCIPALES */
@@ -18,7 +19,7 @@
   font-family: 'Parisienne', cursive;
   font-size: 5em;
   font-weight: normal;
-  margin: 0.3em 0;
+  margin: 0.10em 0;
   opacity: 0;
   position: relative;
   animation-duration: 2s;
@@ -60,7 +61,7 @@
 
 /* SUBTÍTULO ("¡Nos casamos!") */
 #seccion1-portada h3 {
-  font-size: 1em;
+  font-size: 2em;
   text-transform: uppercase;
   letter-spacing: 1px;
   opacity: 0;
@@ -69,7 +70,7 @@
 
 /* FECHA */
 #seccion1-portada p {
-  font-size: 1em;
+  font-size: 2em;
   opacity: 0;
   animation: fadeInSimple 2s ease-out 2.5s forwards;
 }
@@ -93,9 +94,10 @@
 
 #seccion1-portada .corazon {
   font-size: 2em;
-  margin: 0.5em 0;
+  margin: 0.3em 0;
 }
 
 #seccion1-portada p {
   font-size: 1em;
 }
+

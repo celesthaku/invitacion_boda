@@ -61,3 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+// Extrae el parámetro ?invitados=3 de la URL principal y pasa a /rsvp/
+document.addEventListener("DOMContentLoaded", function () {
+  const params = new URLSearchParams(window.location.search);
+  const cantidad = params.get('invitados') || 1;
+
+  const boton = document.getElementById("boton-confirmacion");
+  if (boton) {
+    boton.href = `/rsvp/?cantidad=${cantidad}`;
+  }
+});
