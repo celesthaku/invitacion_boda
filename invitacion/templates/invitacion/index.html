@@ -1,0 +1,195 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David & Estefanía</title>
+  <link rel="stylesheet" href="{% static 'invitacion/css/main.css' %}">
+  <!-- En el <head> de tu HTML -->
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="container">
+
+    <!-- SECCIÓN 1: Portada -->
+        <section id="seccion1-portada" class="seccion portada">
+        <h3 class="fade-in">¡Nos casamos!</h3>
+
+        <h1 class="nombre arriba">Jhonatan</h1>
+
+        <div class="corazon">❤️</div>
+
+        <h1 class="nombre abajo">Gianina</h1>
+
+        <p class="fade-in delay">23 · 09 · 2025</p>
+        </section>
+
+<!-- SECCIÓN 2: Música -->
+<section id="seccion2-musica" class="seccion musica">
+  <h2>Escucha la música</h2>
+
+  <div class="reproductor-minimal">
+    <button id="boton-musica">▶</button>
+    <div class="barra-progreso">
+      <div id="progreso-audio"></div>
+    </div>
+    <audio id="audio-musica" preload="auto">
+      <source src="{% static 'invitacion/audio/musica.mp3' %}" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+  </div>
+</section>
+
+    <!-- SECCIÓN 3: Cuenta Regresiva -->
+    <section id="seccion3-contador" class="seccion contador">
+    <div class="contador-contenedor">
+        <h2>Cuánto falta</h2>
+        <div id="cuenta">
+        <div class="bloque">
+            <span id="dias">00</span><small>Días</small>
+        </div>
+        <div class="puntos">:</div>
+        <div class="bloque">
+            <span id="horas">00</span><small>Hrs</small>
+        </div>
+        <div class="puntos">:</div>
+        <div class="bloque">
+            <span id="minutos">00</span><small>Min</small>
+        </div>
+        </div>
+        <div class="icono-corazon">💙</div> 
+    </div>
+    </section>
+
+    <!-- SECCIÓN 4: La Ceremonia -->
+    <section id="seccion4-ceremonia" class="seccion ceremonia">
+    <h3>La ceremonia</h3>
+    <h2 class="nombre-lugar">Parroquia Divino Niño</h2>
+    <p class="direccion">Esquina Calles Bahamas y Naplo <br>Sol de La Molina</p>
+    <p class="hora">13 de setiembre a las 12:00 H</p>
+    <a href="https://maps.app.goo.gl/N8FLpNxJZsWi9SeK8" target="_blank" class="boton">Ver ubicación</a>
+    </section>
+
+    <!-- SECCIÓN 5: La Celebración -->
+    <section id="seccion5-celebracion" class="seccion celebracion">
+    <h3>La celebración</h3>
+    <h2 class="nombre-lugar">  <span>El Tomate</span><br>
+    <span>de Cieneguilla</span></h2>
+    <p class="direccion">C. de Bailén, 10<br>28013 Madrid</p>
+    <p class="hora">A partir de las 14:00 H</p>
+    <a href="https://maps.app.goo.gl/q5QZY5AJzfzRHzYi9" target="_blank" class="boton">Ver ubicación</a>
+    </section>
+
+
+    <!-- SECCIÓN 6: Galería de Imágenes -->
+    <section id="seccion7-galeria" class="seccion galeria">
+    <h2 class="titulo-seccion">Galería de Imágenes</h2>
+    <p class="subtitulo-galeria">Un minuto, un segundo, un instante que queda en la eternidad.</p>
+
+    <div class="imagen-unica">
+
+        <img src="{% static 'invitacion/img/novios1.jpg' %}" alt="Imagen 1">
+        <!-- Agrega más imágenes aquí -->
+
+    </div>
+    </section>
+
+    <!-- SECCIÓN 7: Dress Code -->
+    <section id="seccion7-dresscode" class="seccion dresscode">
+    <img src="{% static 'invitacion/iconos/dress.png' %}" alt="Vestimenta" class="icono-dresscode">
+
+    <h2>Dress Code</h2>
+    <p class="subtitulo">Código de Vestimenta</p>
+
+    <div class="etiqueta-icono">
+        <hr><img src="{% static 'invitacion/iconos/etiqueta.png' %}"  alt="etiqueta"><hr>
+    </div>
+
+    <ul class="niveles-vestimenta">
+        <li>Etiqueta</li>
+        <li><strong>Formal</strong></li>
+        <li class="gris">Semi-Formal</li>
+        <li class="gris">Casual</li>
+    </ul>
+    <p class="nota">** Queda reservado el color blanco para la novia **</p>
+    </section>
+
+    <!-- SECCIÓN 8: No niños -->
+    <section id="seccion8-ninos" class="seccion no-ninos">
+    <h2 class="titulo-ninos">No niños</h2>
+    <p class="mensaje-ninos">
+        "Queremos que todos disfruten sin preocupaciones, por lo que la celebración será solo para adultos"
+    </p>
+    </section>
+
+    <!-- SECCIÓN 9: Regalo de bodas -->
+    <section id="seccion9-regalo" class="seccion regalo-boda">
+    <img src="{% static 'invitacion/iconos/anillos.png' %}"  alt="Anillos de boda" class="icono-anillos">
+
+    <h2>Regalo de bodas</h2>
+    <p class="frase-regalo">Nuestro mejor regalo eres tú, pero si quieres tener un detalle</p>
+
+    <hr class="linea-divisoria">
+
+    <div class="cuentas-bancarias">
+    <div class="cuenta">
+        <p><strong>JHONATAN</strong></p>
+        <p>Bbva</p>
+        <p>0011-0170-0200244511</p>
+        <p>CCI: 01117000020024451188</p>
+    </div>
+
+    <div class="cuenta">
+        <p><strong>GIANINA</strong></p>
+        <p>Interbank</p>
+        <p>023-3271961381</p>
+        <p>CCI: 003-023-013271961381-93</p>
+    </div>
+
+    <div class="cuenta">
+        <p>Bcp</p>
+        <p>19225054435009</p>
+        <p>CCI: 00219112505443500953</p>
+    </div>
+    </div>
+    </section>
+
+    <!-- SECCIÓN 10: Confirmación de asistencia -->
+    <section id="seccion10-confirmacion" class="seccion confirmacion">
+    <img src="{% static 'invitacion/iconos/correo.png' %}"  alt="Icono Confirmación" class="icono-confirmacion">
+
+    <h2>Rogamos<br>confirmar<br>asistencia</h2>
+
+    <p class="mensaje">
+        ¡Ojalá contemos contigo!<br>
+        Por favor, pulsa este botón para acceder al formulario de confirmación y así ayudarnos a contabilizar las asistencias.
+    </p>
+
+    <p class="gracias">¡Muchas gracias!</p>
+
+    <a href="https://forms.gle/tu-formulario" class="boton-confirmacion" target="_blank">Formulario de Confirmación</a>
+    </section>
+
+    <!-- SECCIÓN 11: Agradecimiento -->
+    <section id="seccion11-final" class="seccion agradecimiento">
+    <h2 class="nombres-final">Jhonatan</h2>
+    <div class="corazon">♥</div>
+    <h2 class="nombres-final">Gianina</h2>
+
+    <hr class="linea-final">
+
+    <h3 class="gracias">GRACIAS</h3>
+    <p class="mensaje-final">por acompañarnos en un día tan especial</p>
+    </section>
+
+
+
+  </div>
+  <script src="{% static 'invitacion/js/script.js' %}"></script>
+</body>
+</html>

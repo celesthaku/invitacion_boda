@@ -1,0 +1,28 @@
+/* Importar estilos de cada sección */
+
+@import url('seccion1.css');  /* Portada */
+@import url('seccion2.css');  /* Música */
+@import url('seccion3.css');  /* Itinerario */
+@import url('seccion4.css');  /* Ceremonia */
+@import url('seccion5.css');  /* Galería */
+@import url('seccion6.css');  /* Confirmación */
+@import url('seccion7.css');  /* Mensaje final / despedida */
+@import url('seccion8.css');  
+@import url('seccion9.css');  
+@import url('seccion10.css');  
+@import url('seccion11.css');  
+@import url('seccionX.css'); 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

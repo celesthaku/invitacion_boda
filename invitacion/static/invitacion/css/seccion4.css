@@ -1,0 +1,68 @@
+/* === SECCIÓN 4: LA CEREMONIA === */
+#seccion4-ceremonia {
+  background-image: url('../img/imagen4_2v.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 30px;
+  text-align: center;
+  color: #000;
+  font-family: 'Playfair Display', serif;
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centrado vertical */
+  align-items: center;
+  gap: 10px; /* espacio entre elementos */
+}
+
+#seccion4-ceremonia h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+#seccion4-ceremonia .nombre-lugar {
+  font-family: 'Parisienne', cursive;
+  font-size: 2.5em;
+  font-weight: normal;
+  margin: 5px 0 10px;
+  color: #000;
+}
+
+#seccion4-ceremonia .direccion {
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+#seccion4-ceremonia .hora {
+  margin: 5px 0 20px;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#seccion4-ceremonia .boton {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #5fb187;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Playfair Display', serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+#seccion4-ceremonia .boton:hover {
+  background-color: #2e8e5c;
+}

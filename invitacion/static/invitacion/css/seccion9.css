@@ -1,0 +1,80 @@
+/* === SECCIÓN 9: REGALO DE BODAS === */
+#seccion9-regalo {
+  background-color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #000;
+  background-image: url('../img/fondo_9__F2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#seccion9-regalo .icono-anillos {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+#seccion9-regalo h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#seccion9-regalo .frase-regalo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.2em;
+  margin: 0 auto 20px;
+  max-width: 400px;
+  color: #333;
+}
+
+#seccion9-regalo .iban {
+  color: #2f518a;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+#seccion9-regalo .icono-bizum {
+  width: 80px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+#seccion9-regalo .linea-divisoria {
+  width: 50%;
+  margin: 20px auto;
+  border: none;
+  border-top: 1px solid #555;
+}
+
+#seccion9-regalo .contacto-transferencia p {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+#seccion9-regalo .telefono {
+  color: #b86161;
+}
+
+.cuentas-bancarias {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', serif;
+  font-size: 0.95em;
+  color: #333;
+  line-height: 1.6em;
+}
+
+.cuentas-bancarias .cuenta {
+  margin-bottom: 25px;
+}
+
+.cuentas-bancarias .cuenta strong {
+  font-size: 1.05em;
+  color: #000;
+}

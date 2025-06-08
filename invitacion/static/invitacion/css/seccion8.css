@@ -1,0 +1,30 @@
+/* === SECCIÓN 8: NO NIÑOS === */
+#seccion8-ninos {
+  background-image: url('../img/fondo_7_F2.jpg'); /* papel texturizado */
+  background-size: cover;
+  background-position: center;
+  height: 40vh; /* 🔹 Esto limita la altura a la mitad de la pantalla */
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #222;
+}
+
+#seccion8-ninos .titulo-ninos {
+  margin-top: 20px; /* mueve hacia abajo solo el título */
+  font-family: 'Parisienne', cursive;
+  font-size: 2em;
+  font-weight: normal;
+  color: #7a9485; /* verde grisáceo elegante */
+  margin-bottom: 10px;
+}
+
+#seccion8-ninos .mensaje-ninos {
+  font-size: 1em;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6em;
+  font-style: italic;
+
+  
+}

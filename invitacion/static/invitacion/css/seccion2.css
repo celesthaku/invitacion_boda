@@ -1,0 +1,120 @@
+
+/* === SECCIÓN 2: MÚSICA === */
+#seccion2-musica {
+  background-image: url('../img/fondo_2_F.jpg'); /* Reemplázalo si tienes un fondo personalizado */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   background-color: none; /* celestito suave */
+  text-align: center;
+  padding: 30px 10px;
+  color: #333;
+
+  display: flex;               /* Activar Flexbox */
+  flex-direction: column;      /* Apila el título y reproductor verticalmente */
+  align-items: center;         /* Centra horizontalmente */
+  justify-content: center;     /* Centra verticalmente */
+  height: 20vh; /* 10% de la altura de la pantalla */
+}
+
+#seccion2-musica h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+#seccion2-musica audio {
+  width: 90%;
+  max-width: 400px;
+  background: transparent;
+  outline: none;
+}
+
+/* Personaliza el botón de reproducir */
+audio::-webkit-media-controls-play-button {
+  background-color: #aeecc4fd; /* celeste suave */
+  border-radius: 50%;
+}
+
+/* Deja el panel visible */
+audio::-webkit-media-controls-panel {
+  background-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+/* Oculta solo lo innecesario */
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-volume-slider-container,
+audio::-webkit-media-controls-download-button,
+audio::-webkit-media-controls-overflow-button {
+  display: none !important;
+}
+
+
+.reproductor-minimal {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#boton-musica {
+  background-color: rgb(180, 223, 202);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.4em;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+#boton-musica:hover {
+  transform: scale(1.1);
+}
+
+.barra-progreso {
+  width: 200px;
+  height: 5px;
+  background-color: #403d3d;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+#progreso-audio {
+  height: 100%;
+  width: 0%;
+  background-color: #49b475; /* verde suave */
+  transition: width 0.1s linear;
+}
+
+#audio-musica {
+  display: none;
+}
+
+
+#boton-musica:focus {
+  outline: none; /* elimina el borde azul/naranja */
+}
+
+#boton-musica:active {
+  background-color: #f2fff5; /* cambia esto al color que tú quieras al hacer clic */
+  transform: scale(0.95); /* animación opcional al presionar */
+}
+
+#boton-musica {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#boton-musica:active {
+  background-color: #aeecc4;
+}

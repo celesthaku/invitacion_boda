@@ -1,0 +1,101 @@
+/* === SECCIÓN 1: PORTADA === */
+#seccion1-portada {
+  background-image: url('../img/fondo_1_F2.jpg'); /* fotob_1.png   fondoa_1.png*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 10px 10px;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+}
+
+/* TITULOS PRINCIPALES */
+#seccion1-portada h1 {
+  font-family: 'Parisienne', cursive;
+  font-size: 5em;
+  font-weight: normal;
+  margin: 0.3em 0;
+  opacity: 0;
+  position: relative;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+.nombre.arriba {
+  animation-name: aparecerDesdeArriba;
+}
+
+.nombre.abajo {
+  animation-name: aparecerDesdeAbajo;
+  animation-delay: 1s;
+}
+
+/* Animaciones principales */
+@keyframes aparecerDesdeArriba {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aparecerDesdeAbajo {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SUBTÍTULO ("¡Nos casamos!") */
+#seccion1-portada h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeInSimple 2s ease-out 2s forwards;
+}
+
+/* FECHA */
+#seccion1-portada p {
+  font-size: 1em;
+  opacity: 0;
+  animation: fadeInSimple 2s ease-out 2.5s forwards;
+}
+
+/* Animación de fade suave */
+@keyframes fadeInSimple {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#seccion1-portada h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#seccion1-portada .corazon {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+#seccion1-portada p {
+  font-size: 1em;
+}
