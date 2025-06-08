@@ -1,6 +1,6 @@
 /* === SECCIÓN 8: NO NIÑOS === */
 #seccion8-ninos {
-  background-image: url('../img/fondo_7_F2.jpg'); /* papel texturizado */
+  background-image: url('../img/fondo_7.jpg'); /* papel texturizado */
   background-size: cover;
   background-position: center;
   height: 40vh; /* 🔹 Esto limita la altura a la mitad de la pantalla */

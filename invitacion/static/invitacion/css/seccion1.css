@@ -1,6 +1,6 @@
 /* === SECCIÓN 1: PORTADA === */
 #seccion1-portada {
-  background-image: url('../img/fondo_1_f3.jpg'); /* fotob_1.png   fondoa_1.png*/
+  background-image: url('../img/fondo_1.jpg'); /* fotob_1.png   fondoa_1.png*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
